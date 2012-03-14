@@ -1,7 +1,7 @@
 Pretty Param
 ============
 
-Easily make your resource-based routes more search engine friendly and without doing a bunch of crazy shit or changing your routes.
+Easily make your resource-based routes more search engine friendly without doing a bunch of crazy shit or changing your routes.
 
 Installation
 ------------
