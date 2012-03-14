@@ -6,6 +6,8 @@ Easily make your resource-based routes more search engine friendly and without d
 Installation
 ------------
 
+Gemfile:
+
     gem 'pretty_param'
 
 Usage 
