@@ -1,7 +1,12 @@
 Pretty Param
 ============
 
-Easily make your resource-based routes more search engine friendly.
+Easily make your resource-based routes more search engine friendly and without doing a bunch of crazy shit or changing your routes.
+
+Installation
+------------
+
+    gem 'pretty_param'
 
 Usage 
 -----
