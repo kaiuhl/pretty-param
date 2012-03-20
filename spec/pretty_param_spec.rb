@@ -9,6 +9,12 @@ ActiveRecord::Base.connection.create_table(:dummies) do |t|
 	t.string :nickname
 end
 
+describe ActiveRecord::Base do
+	it "should receive #has_pretty_param" do
+		ActiveRecord::Base.should respond_to(:has_pretty_param)
+	end
+end
+
 class Dummy < ActiveRecord::Base
 	has_pretty_param :first_name, :last_name
 end
