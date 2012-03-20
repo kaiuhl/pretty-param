@@ -1,7 +1,7 @@
 require 'rails/all'
 require 'pretty_param'
 
-ActiveRecord::Base.establish_connection(adapter: "sqlite3",	database: "test.db")
+ActiveRecord::Base.establish_connection(adapter: "sqlite3",	database: "spec/test.db")
 ActiveRecord::Base.connection.execute("DROP TABLE IF EXISTS 'dummies'")
 ActiveRecord::Base.connection.create_table(:dummies) do |t|
 	t.string :first_name
