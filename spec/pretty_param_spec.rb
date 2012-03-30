@@ -21,14 +21,14 @@ end
 
 describe PrettyParam do
 	let(:dummy) { Dummy.create(first_name: "Alex", last_name: "Kiheri", nickname: "AFK") }
-	let(:blinged_dummy) { Dummy.create(first_name: "^A%lex@#", last_name: "#K+iheri!@") }
+	let(:blinged_dummy) { Dummy.create(first_name: "^A%l/ex@#", last_name: "#K+iheri!@") }
 	let(:multiple_space_dummy) { Dummy.create(first_name: "Alex ", last_name: " Kiheri") }
 	
 	it "should add specified attributes to `to_param`" do
 		dummy.to_param.should include("alex-kiheri")
 	end
 	
-	it "should filter out symbols" do
+	it "should filter out symbols and forward slashes" do
 		blinged_dummy.to_param.should include("alex-kiheri")
 	end
 	
